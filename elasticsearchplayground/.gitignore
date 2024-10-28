@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# ElasticSearch
+certs
+esdata01
+esdata02
+esdata03
+kibanadata
