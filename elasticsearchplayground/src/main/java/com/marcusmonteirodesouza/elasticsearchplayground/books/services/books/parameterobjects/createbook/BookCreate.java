@@ -1,6 +1,7 @@
 package com.marcusmonteirodesouza.elasticsearchplayground.books.services.books.parameterobjects.createbook;
 
-import java.time.LocalDate;
+import java.util.Map;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,11 +10,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookCreate {
-    private String name;
+    private String id;
 
-    private String author;
+    private String title;
 
-    private LocalDate releaseDate;
+    private Set<String> authors;
 
-    private Integer pageCount;
+    private Set<String> subjects;
+
+    private Map<String, String> formats;
+
+    private Integer downloadCount;
 }

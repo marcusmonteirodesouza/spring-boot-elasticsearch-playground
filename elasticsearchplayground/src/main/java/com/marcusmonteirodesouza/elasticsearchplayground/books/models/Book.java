@@ -1,13 +1,12 @@
 package com.marcusmonteirodesouza.elasticsearchplayground.books.models;
 
-import java.time.LocalDate;
+import java.util.Map;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
 
 @Data
 @AllArgsConstructor
@@ -16,12 +15,13 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 public class Book {
     @Id private String id;
 
-    private String name;
+    private String title;
 
-    private String author;
+    private Set<String> authors;
 
-    @Field(type = FieldType.Date)
-    private LocalDate releaseDate;
+    private Set<String> subjects;
 
-    private Integer pageCount;
+    private Map<String, String> formats;
+
+    private Integer downloadCount;
 }
