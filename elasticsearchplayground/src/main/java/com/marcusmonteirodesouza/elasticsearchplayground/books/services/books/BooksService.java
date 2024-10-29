@@ -1,9 +1,10 @@
 package com.marcusmonteirodesouza.elasticsearchplayground.books.services.books;
 
 import com.marcusmonteirodesouza.elasticsearchplayground.books.models.Book;
+import com.marcusmonteirodesouza.elasticsearchplayground.books.repositories.elasticsearch.ElasticSearchBookRepository;
 import com.marcusmonteirodesouza.elasticsearchplayground.books.services.books.parameterobjects.createbook.BookCreate;
 import com.marcusmonteirodesouza.elasticsearchplayground.books.services.books.parameterobjects.searchbooks.BooksSearch;
-import com.marcusmonteirodesouza.elasticsearchplayground.books.services.books.repositories.elasticsearch.ElasticSearchBookRepository;
+
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

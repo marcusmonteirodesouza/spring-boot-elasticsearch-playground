@@ -1,4 +1,4 @@
-package com.marcusmonteirodesouza.elasticsearchplayground.books.services.books.repositories.elasticsearch;
+package com.marcusmonteirodesouza.elasticsearchplayground.books.repositories.elasticsearch;
 
 import com.marcusmonteirodesouza.elasticsearchplayground.books.models.Book;
 import java.util.List;
